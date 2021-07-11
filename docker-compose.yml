@@ -1,0 +1,8 @@
+version: '3'
+services: 
+    course-services: 
+        build: ./services
+        volumes: 
+            - ./services:/usr/src/app
+        ports: 
+            - 5001:8080
