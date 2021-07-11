@@ -4,5 +4,6 @@ services:
         build: ./services
         volumes: 
             - ./services:/usr/src/app
+            - /usr/src/app/node_modules
         ports: 
             - 5001:8080
